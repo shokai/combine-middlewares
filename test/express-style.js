@@ -24,7 +24,7 @@ describe('express style middleware', function () {
         done()
       },
       end: (end) => {
-        done('auth middleware is not working')
+        done(['auth middleware is not working', end])
       }
     })
   })
@@ -36,14 +36,14 @@ describe('express style middleware', function () {
         done()
       },
       end: (end) => {
-        done('validate middleware is not working')
+        done(['validate middleware is not working', end])
       }})
   })
 
   it('upcase alphabets', function (done) {
     combined({user: 'shokai', data: 'hello'}, {
       error: (err) => {
-        done('upcase middleware is not working')
+        done(['upcase middleware', err])
       },
       end: (end) => {
         assert.equal(end, 'HELLO')
