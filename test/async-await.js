@@ -5,7 +5,7 @@ const {delay} = require('./helper')
 const combineMiddlewares = require('../')
 
 describe('async-await style', function () {
-  it('combines middlewares', async function () {
+  it('waits next middlewares(s) finish', async function () {
     const m1 = async (results, next) => {
       results.push('m1 called')
       await delay(10)
