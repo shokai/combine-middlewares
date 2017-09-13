@@ -1,4 +1,5 @@
 # combine-middlewares
+combine middlewares to one chain, supports async-await and recursive.
 
 - https://github.com/shokai/combine-middlewares
 - https://npmjs.com/package/combine-middlewares
