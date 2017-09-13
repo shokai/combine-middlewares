@@ -1,7 +1,7 @@
 {
   "name": "combine-middlewares",
   "version": "0.0.1",
-  "description": "combine middlewares",
+  "description": "combine middlewares like express, koa v2, redux style",
   "main": "index.js",
   "scripts": {
     "test": "run-s test:*",
