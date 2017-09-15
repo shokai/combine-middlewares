@@ -19,5 +19,17 @@
     "mocha": "^3.5.3",
     "npm-run-all": "^4.1.1",
     "standard": "^10.0.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shokai/combine-middlewares.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shokai/combine-middlewares/issues"
+  },
+  "homepage": "https://github.com/shokai/combine-middlewares#readme"
 }
