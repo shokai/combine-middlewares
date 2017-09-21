@@ -2,8 +2,10 @@
   "name": "combine-middlewares",
   "version": "0.0.3",
   "description": "combine middlewares to one chain, supports async-await and recursive.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "babel src/ --out-dir lib/ --source-maps inline",
+    "pretest": "npm run build",
     "test": "run-s test:*",
     "test:mocha": "mocha test/*.js",
     "test:standard": "standard"
@@ -15,12 +17,20 @@
   "author": "Sho Hashimoto <hashimoto@shokai.org>",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
     "chai": "^4.1.2",
     "mocha": "^3.5.3",
     "npm-run-all": "^4.1.1",
     "standard": "^10.0.3"
   },
+  "standard": {
+    "ignore": [
+      "/lib"
+    ]
+  },
   "directories": {
+    "lib": "lib",
     "test": "test"
   },
   "dependencies": {},
