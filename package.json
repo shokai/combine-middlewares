@@ -1,6 +1,6 @@
 {
   "name": "combine-middlewares",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "combine middlewares to one chain, supports async-await and recursive.",
   "main": "lib/index.js",
   "scripts": {
